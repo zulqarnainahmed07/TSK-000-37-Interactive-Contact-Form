@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="contact.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11">
+</head>
+<body>
+  <div class="container">
+    <div class="item">
+        <div class="contact">
+            <div class="first-text">Get in touch</div>
+            <img src="img1.png" alt="">
+            <div class="social-links">
+                <span class="second-text">Connect with us:</span>
+                <ul class="social-media">
+                    <li><a href="https://www.facebook.com/profile.php?id=100093222249320"><i class='bx bxl-facebook'></i></a></li>
+                    <li><a href="https://www.instagram.com/internee.pk/"><i class='bx bxl-instagram'></i></a></li>
+                    <li><a href="https://www.linkedin.com/company/internee-pk/"><i class='bx bxl-linkedin'></i></a></li>
+                    <li><a href="https://twitter.com/Internee_pk"><i class='bx bxl-twitter'></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="submit-form">
+           <form id="form" action="/">
+            <h1>Contact Us</h1>
+            <div class="input-control">
+                <label for="name">Name: </label>
+                <input id="name" name="name" type="text" placeholder="Xyz">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="email">Email address: </label>
+                <input id="email" name="email" type="text" placeholder="xyz@gmail.com">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="phone">Phone no: </label>
+                <input id="phone" name="phone" type="phone" placeholder="+9234xxxx">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="subject">Subject: </label>
+                <input id="subject" name="subject" type="text" placeholder="Subject">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="message">Message: </label>
+                <textarea name="" id="message" cols="10" rows="10" placeholder="Any message"></textarea>
+                <div class="error"></div>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="/script.js"></script>
+</body>
+</html>

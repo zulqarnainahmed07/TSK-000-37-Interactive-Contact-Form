@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #7bf58b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item{
+    width: 60%;
+    height: 520px;
+    max-width: 820px;
+    background: #fff; 
+    border-radius: 20px;
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, .4);
+    overflow: hidden;
+    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    z-index: 1000;
+}
+.contact{
+    background: radial-gradient(788px at 0.7% 3.4%, rgb(164, 231, 192) 10%, rgb(255, 255, 255) 100%);}
+.submit-form{
+    background: #fff;
+}
+.container img{
+    height: 320px;
+    width: 320px;
+    margin-left: 20px;
+}
+.first-text{
+    padding-left: 20px;
+    padding-top: 20px;
+    font-size: 35px;
+    color: #000000;
+    font-weight: 900; 
+    
+}
+.social-media{
+    display: flex;
+    list-style: none;
+}
+ul li{
+    padding-left: 15px;
+    font-size: 24px;
+    margin-top: 10px;
+}
+.social-media i{
+    background: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    transition: .3s;
+    color: #3f3f3f;
+}
+.social-media i:hover{
+    background: rgb(22,255,186);
+    background: linear-gradient(90deg, rgba(22,255,186,1) 0%, rgba(125,251,125,1) 35%, rgba(0,0,0,0) 100%);
+}
+.second-text{
+    font-weight: bolder;
+    color: #000000;
+    padding-left: 20px;
+}
+
+
+#form {
+    width: 300px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 4px;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+#form button {
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+    margin-left: 12px;
+    color: white;
+    background-color: #0174BE;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#form h1 {
+    color: #0f2027;
+    text-align: center;
+    font-weight: bold;
+}
+/* 
+#form button {
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+    margin-left: 12px;
+    color: white;
+    background-color: #0174BE;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+} */
+
+.input-control {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-control input {
+    border: 2px solid #f0f0f0;
+	border-radius: 4px;
+	display: block;
+	font-size: 12px;
+	padding: 10px;
+	width: 100%;
+}
+.input-control textarea{
+    border: 2px solid #f0f0f0;
+	border-radius: 4px;
+	display: block; 
+	font-size: 12px;
+	padding: 10px;
+	width: 100%;
+    height: 60px;
+}
+.input-control textarea:focus{
+    outline: none;
+}
+.input-control.error textarea{
+    border-color: #ff3860;
+}
+
+.input-control input:focus {
+    outline: 0;
+}
+
+.input-control.success input {
+    border-color: #09c372;
+}
+
+.input-control.error input {
+    border-color: #ff3860;
+}
+
+.input-control .error {
+    color: #ff3860;
+    font-size: 9px;
+    height: 13px;
+}
+
+
+
+
+
+
+
+/* Responsive */
+
+ @media(max-width:768px){ 
+    .item{
+        grid-template-columns: 1fr;
+    }
+    .contact{
+        display: none;
+    }
+    .text{
+        font-size: 40px;
+        text-align: center;
+    }
+    .btn{
+        width: 25%;
+        height: 40px;
+        font-size: 12px;
+    }
+}
+
+@media(max-width:480px){
+    .item{
+        grid-template-columns: 1fr;
+    }
+    .contact{
+        display: none;
+    }
+    .text{
+        font-size: 20px;
+        text-align: center;
+    }
+    .btn{
+        width: 20%;
+        height: 40px;
+        font-size: 12px;
+    }
+ } 
+
+
+
+
+
+
+
+
+/* Add this inside your existing CSS */
+
+/* You may add custom styles for the subject input */
+.input-control input, .input-control textarea {
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    font-size: 12px;
+    padding: 10px;
+    width: 100%;
+}
+
+.input-control.error input, .input-control.error textarea {
+    border-color: #ff3860;
+}
+
+.input-control.success input, .input-control.success textarea {
+    border-color: #09c372;
+}
+
+.input-control .error {
+    color: #ff3860;
+    font-size: 9px;
+    height: 13px;
+}
